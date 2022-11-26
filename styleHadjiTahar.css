@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section.home{
+  /* padding: 100px 10px; */
+  background: linear-gradient(90deg, #cfd9df -0.78%, #e2ebf0 99.38%);
+}
+.home {
+  position: relative;
+  padding: 0;
+}
+.home .slid-container .slid {
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  /* padding: 20px 10px; */
+}
+.home .slid-container .slid .content {
+  flex: 1 1 40rem;
+  /* animation: slidContent 0.5 linear 1s backwards; */
+}
+/* @keyframes slidContent{
+0%{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+} */
+
+.home .slid-container .slid .img {
+  flex: 1 1 874px;
+  /* padding-bottom: 41px; */
+  position: relative;
+  z-index: 0;
+  margin-right: 102px;
+}
+.home .slid-container .slid .img .shoe {
+  width: 100%;
+  transform: rotate(30%);
+}
+.home .slid-container .slid .content span.span1 {
+  position: absolute;
+  left: 95.06px;
+  top: 53.06999999999999px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  color: #726d6d;
+}
+.home .slid-container .slid .content span.span2 {
+  position: absolute;
+  left: 203.07px;
+  top: 88.57px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 47px;
+  color: #726d6d;
+}
+.home .slid-container .slid .content h3 {
+  position: absolute;
+  left: 203.07px;
+  top: 121.75999999999999px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 65px;
+  color: #726d6d;
+}
+.home .slid-container .slid .content p {
+  position: absolute;
+  /* width: 606.1px; */
+  /* height: 186.38px; */
+  left: 95.06px;
+  top: 131.89999999999998px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 165px;
+  color: #726d6d;
+}
+.btn-shop-now {
+  font-family: "Oswald";
+  font-style: normal;
+  text-decoration: none;
+  border-radius: 11px;
+  padding: 10px;
+  color: white;
+  background: #0a3250;
+  border: 1px solid rgba(10, 50, 80, 0.46);
+  position: absolute;
+  left: 120.55000000000001px;
+  top: 313px;
+  cursor: pointer;
+}
+
+/* ________ */
+.home .slid-container {
+  display: none;
+}
+.home .slid-container.active {
+  display: block;
+}
+/* ________ */
+.home #prev,
+.home #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  height: 40px;
+  width: 40px;
+  font-size: 37px;
+  color: #a19f9f;
+  border: 1px solid #a19f9f;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.home #prev:hover,
+.home #next:hover {
+  background: white;
+  color: #a19f9f;
+}
+.home #prev {
+  left: 50px;
+}
+.home #next {
+  right: 50px;
+}
+.bullet {
+  position: absolute;
+  left: 50%;
+  transform: translatey(-50%);
+  bottom: 0;
+  display: flex;
+  list-style: none;
+  
+}
+.bullet li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: linear-gradient(90deg, #ACCBEE 0%, #E7F0FD 100%);
+}
+.bullet1.activebullet {
+  background: #0A3250;
+}
+/* end section home */
+
+/* start section Categories */
+.Categories {
+  margin: 20px 0;
+  width: 100%;
+  height:100%;
+  position: relative;
+  margin-bottom: 50px;
+  font-family: "Oswald";
+  font-style: normal;
+}
+.Categories .container h1.one{
+  position: absolute;
+  left: 64px;
+  top: -12.990000000000009px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 67px;
+  color: #0A3250;
+}
+.Categories .container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Categories .container .content {
+  color: black;
+  padding: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+.Categories .container .content i {
+  width: 142px;
+  height: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 50, 80, 0.95);
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  font-size: 40px;
+  color: white;
+}
+.Categories .container .content i.view a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+.Categories .container .content i.view {
+  background: linear-gradient(89.3deg, #0A3250 -11.86%, rgba(10, 50, 80, 0) 95.86%);
+}
+.Categories .container .content h2 a{
+  text-decoration: none;
+  color: black;
+}
+hr.ligne{
+  border: 1px solid #000000;
+  transform: rotate(-0.21deg);
+}
+/* end section categories */
+
+/* start sectiion FEATURED PRODUCT */
+section.FEATURED_PRODUCT{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+}
+section.FEATURED_PRODUCT h1{
+  margin-left: 64px;
+}
+section.FEATURED_PRODUCT h1 a{
+ color: #0A3250;
+}
+section.FEATURED_PRODUCT .container{
+
+  display: grid;
+  margin: 5% 10% 0;
+  grid-template-columns: 400px 600px;
+  grid-template-rows: 300px;
+  justify-content: center;
+}
+section.FEATURED_PRODUCT .container .content1{
+  background-image: url("../image/Rectangle\ 28.png");
+  background-size: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+section.FEATURED_PRODUCT .container .content1 p{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    /* width: 281px; */
+    height: 100px;
+    margin-top: 20px;
+}
+section.FEATURED_PRODUCT .container .content1 h3{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    /* width: 281px; */
+    height: 50px;
+    /* margin-top: 20px; */
+}
+section.FEATURED_PRODUCT .container .content1 .pri{
+    width: 300px;
+    height: 50px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 55px;
+    color: #D53D3D;
+    background-color: #86BBE1;
+    /* border-radius: 10px; */
+    margin-left: 90px;
+}
+section.FEATURED_PRODUCT .container .content1 .buy{
+  margin-top: 10px;
+  background-color: #CCE9F2;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 90px;
+}
+section.FEATURED_PRODUCT .container .content1 a{
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+}
+section.FEATURED_PRODUCT .container .content2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 170px 110px;
+  /* align-items: center; */
+  column-gap: 10px;
+  row-gap: 5px;
+}
+section.FEATURED_PRODUCT .container .content2 .rectangle1{
+ background-image: url("../image/Rectangle\ 29.png");
+ background-size:cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+ font-size: 20px;
+
+}
+section.FEATURED_PRODUCT .container .content2 .rectangle2{
+  background-image: url("../image/Rectangle\ 34.png");
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+
+}
+section.FEATURED_PRODUCT .container .content2 .rectangle3{
+    background-image: url(../image/land-rover-range-rover-car-png-25\ 1.png);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-color: #E4F6AF;
+    font-size: 20px;
+
+}
+section.FEATURED_PRODUCT .container .content2 .rectangle4{
+  background-image: url(../image/apple-iphone-11-64go-noir-profil\ 1\ \(1\).png);
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #86BBE1;
+}
+section.FEATURED_PRODUCT .container .content2 .rectangle4 a{
+  margin-right: 5px;
+}
+section.FEATURED_PRODUCT .container .content2 .rectangle5{
+  background-image: url("../image/947-9472989_a-washing-machine-that-washes-itself-too-washing\ 1.png");
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ECCBF8;
+  grid-column: 2/4;
+}
+
+section.FEATURED_PRODUCT .container .content2 .rectangle5 .Samsung{
+  margin-left: 20px;
+}
+section.FEATURED_PRODUCT .container .content2 .rectangle5 .Samsung2{
+  margin-right: 20px;
+}
+section.FEATURED_PRODUCT .container .content2 a{
+ text-decoration: none;
+ color: black;
+ /* font-size: 38px; */
+}
+/* end section FEATURED PRODUCT */
